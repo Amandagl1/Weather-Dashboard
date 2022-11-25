@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header h1 {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+    background-color: #fff;
+    /* Adding a gradient to the background */
+    background-image: linear-gradient(to bottom right, blue, purple);
+}
+
+/* ---------- */
+/* Search Bar */
+/* ---------- */
+
+#search-bar {
+    margin: 10px 5px;
+    display: inline-block;
+    position: relative;
+    flex-wrap: wrap;
+    width: 215px;
+    height: 100vh;
+}
+
+#input-city {
+    margin: 5px 0;
+    width: 205px;
+    height: 20px;
+}
+
+/* ------------- */
+/* Search Button */
+/* ------------- */
+
+#search-btn {
+    padding: 6px 83px;
+    color: #fff;
+    background-color: darkblue;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+}
+
+/* ------------------------------------- */
+/* Container for displaying weather info */
+/* ------------------------------------- */
+
+#main-container {
+    display: inline-block;
+    position: absolute;
+}
+
+#display-container{
+    width: 700px;
+    height: 200px;
+    margin: 3px 0;
+    border: 1px solid black;
+}
+
+/* --------------------------------------- */
+/* Container for displaying 5-day forecast */
+/* --------------------------------------- */
+
+h3 {
+    margin: 15px 0 10px 0;
+}
+
+#five-day-forecast {
+    display: inline-block;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-item {
+    width: 125px;
+    height: 150px;
+    margin-top: 5px;
+    margin-right: 15px;
+    background-color: rgb(33, 43, 60);
+}
