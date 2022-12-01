@@ -14,15 +14,33 @@
 <!-- Search for a City -->
 <div id="search-bar">
         <h2>Search for a City:</h2>
-        <input type="text" name="City" id="input-city" placeholder="San Diego">
+        <input type="text" name="City" id="input-city" placeholder="Enter a US city">
         <button type="submit" id="search-btn">Search</button>
 </div>
 
 <!-- Div container for displaying API information (City, Date, Tempurature, WInd, Humidity). -->
 <div id="main-container">
 
-<!-- Div container displayin a 5-Day Forecast -->
-    <div id="display-container"></div>
+<!-- Main description box for city information -->
+    <div id="display-container">
+        <h2 id="city-title">City: 
+            <p class="city-name"></p>
+        </h2>
+        <p><strong>Description: </strong>  
+            <p class="description"></p>
+        </p>
+        <p><strong>Temperature: </strong> 
+            <p class="temp"></p>
+        </p>
+        <p><strong>Wind Speeds: </strong> 
+            <p class="wind"></p>
+        </p>
+        <p><strong>Humidity: </strong> 
+            <p class="humidity"></p>
+        </p>
+    </div>
+
+<!-- Div container displaying a 5-Day Forecast -->
         <h3>5-Day Forecast:</h3>
         <div id="five-day-forecast">
             <div class="div-item" id="day-1"></div>
