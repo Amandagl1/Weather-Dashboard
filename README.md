@@ -9,7 +9,7 @@
 ![Mockup](assets/images/demo.png)
 
 ## Screenshot of Webpage
-
+![Screeshot of Weather Dashboard](assets/images/Weather-Dashboard_Sreenshot.png)
 
 ## Deployed Application
 Weather Dashboard [Application]()!

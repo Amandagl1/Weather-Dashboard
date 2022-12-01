@@ -35,7 +35,8 @@ function getApi() {
     })
 
     // Requesting data forecast for 5 days
-    var requestFiveDayForecast = 'http://api.openweathermap.org/data/2.5/forecast?q='+inputCity.value+'&appid=a076f8aca8be2745eedd972c6da85de1&cnt=5';
+    // Limits results to five per request
+    var requestFiveDayForecast = 'http://api.openweathermap.org/data/2.5/forecast?q='+inputCity.value+'&appid=a076f8aca8be2745eedd972c6da85de1&units=imperial&cnt=5';
     
     // Retrieving ID's of each box for the 5 day forecast
     var boxOne = document.getElementById("day-1");
@@ -50,11 +51,17 @@ function getApi() {
     })
     .then(function (data) {
         console.log(data);
-        var dayOne = data['list'][0];
-        var dayTwo = data['list'][1];
-        var dayThree = data['list'][2];
-        var dayFour = data['list'][3];
-        var dayFive = data['list'][4];
+        var dayOne = data['list'][0]['weather'][0];
+        var dayTwo = data['list'][1]['weather'][0];
+        var dayThree = data['list'][2]['weather'][0];
+        var dayFour = data['list'][3]['weather'][0];
+        var dayFive = data['list'][4]['weather'][0];
+
+        boxOne.textContent = JSON.stringify(dayOne);
+        boxTwo.textContent = JSON.stringify(dayTwo);
+        boxThree.textContent = JSON.stringify(dayThree);
+        boxFour.textContent = JSON.stringify(dayFour);
+        boxFive.textContent = JSON.stringify(dayFive);
 
     })
 };

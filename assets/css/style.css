@@ -9,7 +9,6 @@ html {
 }
 
 header h1 {
-    display: block;
     text-align: center;
     padding: 15px 0;
     color: #fff;
@@ -60,8 +59,8 @@ header h1 {
     position: absolute;
 }
 
-#display-container{
-    width: 700px;
+#display-container {
+    width: 650px;
     height: 200px;
     margin: 3px 0;
     border: 1px solid black;
@@ -80,6 +79,7 @@ h3 {
     position: absolute;
     display: flex;
     flex-direction: row;
+    color: #fff;
 }
 
 .div-item {
